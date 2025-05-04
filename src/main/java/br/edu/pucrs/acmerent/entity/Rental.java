@@ -1,6 +1,6 @@
 package br.edu.pucrs.acmerent.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.edu.pucrs.acmerent.controller.AcmeRentControllerTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.571 s -- in br.edu.pucrs.acmerent.controller.AcmeRentControllerTest

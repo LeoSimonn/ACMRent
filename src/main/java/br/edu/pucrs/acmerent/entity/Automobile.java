@@ -1,6 +1,6 @@
 package br.edu.pucrs.acmerent.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.List;
 
 @Entity

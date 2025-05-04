@@ -1,0 +1,6 @@
+br\edu\pucrs\acmerent\AcmeRentApplication.class
+br\edu\pucrs\acmerent\controller\AcmeRentController.class
+br\edu\pucrs\acmerent\entity\CarStatus.class
+br\edu\pucrs\acmerent\entity\Automobile.class
+br\edu\pucrs\acmerent\entity\Client.class
+br\edu\pucrs\acmerent\entity\Rental.class
