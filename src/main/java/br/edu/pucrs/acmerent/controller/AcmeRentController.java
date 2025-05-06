@@ -124,6 +124,29 @@ public class AcmeRentController {
         }
     }
 
+    // POST /acmerent/atendimento/finalizalocacao
+    @PostMapping("/atendimento/finalizalocacao")
+    public ResponseEntity<Boolean> finalizaLocacao(@RequestBody Map<String, Object> body) {
+        try {
+            Long numero = ((Number) body.get("numero")).longValue();
+            Rental rental = rentals.get(numero);
+            
+            if (rental == null) {
+                return ResponseEntity.ok(false);
+            }
+
+            Automobile auto = rental.getAutomobile();
+            if (auto != null) {
+                auto.returnCar();
+            }
+            
+            rentals.remove(numero);
+            return ResponseEntity.ok(true);
+        } catch (Exception e) {
+            return ResponseEntity.ok(false);
+        }
+    }
+
     // Métodos utilitários para inicialização de dados
     public void addClient(Long id, Client c) {
         clients.put(id, c);

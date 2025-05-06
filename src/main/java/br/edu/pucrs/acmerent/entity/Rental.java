@@ -9,7 +9,6 @@ public class Rental {
 
     @Id
     private Long rentalNumber;
-
     private LocalDate startDate;
     private int numberOfDays;
     private BigDecimal totalValue;
