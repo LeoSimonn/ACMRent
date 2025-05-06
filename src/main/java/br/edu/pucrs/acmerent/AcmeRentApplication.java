@@ -18,7 +18,7 @@ public class AcmeRentApplication {
     }
 
     @Bean
-    public CommandLineRunner initData(AcmeRentController controller) {
+    CommandLineRunner initData(AcmeRentController controller) {
         return args -> {
             Client c1 = new Client("11111111111", "João Silva", "51999999999");
             Client c2 = new Client("22222222222", "Maria Souza", "51888888888");

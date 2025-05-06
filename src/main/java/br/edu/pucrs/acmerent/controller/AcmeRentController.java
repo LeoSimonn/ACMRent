@@ -62,7 +62,7 @@ public class AcmeRentController {
 
     // GET /acmerent/consultacliente?codigo={codigo}
     @GetMapping("/consultacliente")
-    public ResponseEntity<?> consultaCliente(@RequestParam("codigo") Long codigo) {
+    public ResponseEntity<?> consultaCliente(@RequestParam Long codigo) {
         Client cli = clients.get(codigo);
         if (cli == null) return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Cliente não encontrado");
         Map<String, Object> map = new HashMap<>();
